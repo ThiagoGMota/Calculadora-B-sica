@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="center">
+        <div id="calculadora">
+            <div class="resultado" id="resultado">
+                <p>
+                   
+                </p>
+            </div>
+                <div class="numeros" id="numeros">
+                    <table>
+                        <tr>
+                            <td id="option" onclick="clean()"><button style="color: red;">C</button></td>
+                            <td id="option" onclick="sqrt('&radic;')"><button>&radic;</button></td><!--raiz-->
+                            <td id="option" onclick="thanks('')"><button>&#128512</button></td>
+                            <td id="option" onclick="insert('*')"><button style="color: rgb(10, 203, 52);">x</button></td>
+                        </tr>
+                        <tr>
+                            <td id="num" onclick="insert('7')"><button>7</button></td>
+                            <td id="num" onclick="insert('8')"><button>8</button></td>
+                            <td id="num" onclick="insert('9')"><button>9</button></td>
+                            <td id="option" onclick="insert('/')"><button  style="color: rgb(10, 203, 52);">/</button></td>
+                        </tr>
+                        <tr>
+                            <td id="num" onclick="insert('4')"><button>4</button></td>
+                            <td id="num" onclick="insert('5')"><button>5</button></td>
+                            <td id="num" onclick="insert('6')"><button>6</button></td>
+                            <td id="option" onclick="insert('-')"><button style="color: rgb(10, 203, 52);">-</button></td>
+                        </tr>
+                        <tr>
+                            <td id="num" onclick="insert('1')"><button>1</button></td>
+                            <td id="num" onclick="insert('2')"><button>2</button></td>
+                            <td id="num" onclick="insert('3')"><button>3</button></td>
+                            <td id="option" onclick="insert('+')"><button style="color: rgb(10, 203, 52);">+</button></td>
+                        </tr>
+                        <tr>
+                            <td id="option" onclick="insert('.')"><button>.</button></td>
+                            <td id="num" onclick="insert('0')"><button>0</button></td>
+                            <td id="option" onclick="backspace()"><button> &#9003;</button></td><!--backspace-->
+                            <td id="option" onclick="equals()"><button style="background-color: rgb(10, 203, 52);">=</button></td>
+                        </tr>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
